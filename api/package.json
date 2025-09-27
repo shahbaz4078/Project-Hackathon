@@ -1,0 +1,36 @@
+{
+  "name": "supply-chain-api",
+  "version": "1.0.0",
+  "description": "Backend API for blockchain supply chain application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "build": "echo 'No build step required for Node.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "blockchain",
+    "supply-chain",
+    "api",
+    "express"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.11.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "ethers": "^6.15.0",
+    "express": "^5.1.0",
+    "form-data": "^4.0.4",
+    "helmet": "^8.1.0",
+    "ml-regression": "^6.3.0",
+    "mongoose": "^8.18.0",
+    "morgan": "^1.10.1",
+    "simple-statistics": "^7.8.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

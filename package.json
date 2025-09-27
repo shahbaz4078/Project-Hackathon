@@ -1,0 +1,22 @@
+{
+  "name": "blockchain-supply-chain",
+  "version": "1.0.0",
+  "description": "Decentralized supply chain tracking application",
+  "main": "index.js",
+  "scripts": {
+    "install:all": "npm install && cd contracts && npm install && cd ../api && npm install && cd ../web && npm install",
+    "blockchain:start": "cd contracts && npx hardhat node",
+    "contracts:compile": "cd contracts && npx hardhat compile",
+    "contracts:deploy": "cd contracts && npx hardhat run scripts/deploy.js --network localhost",
+    "contracts:test": "cd contracts && npx hardhat test",
+    "api:dev": "cd api && npm run dev",
+    "web:dev": "cd web && npm run dev",
+    "demo": "cd contracts && npx hardhat run scripts/demo.js --network localhost",
+    "build": "cd contracts && npm run build && cd ../api && npm run build && cd ../web && npm run build",
+    "deploy:testnet": "cd contracts && npx hardhat run scripts/deploy.js --network polygon",
+    "deploy:web": "cd web && npm run build && vercel --prod"
+  },
+  "keywords": ["blockchain", "supply-chain", "ethereum", "ipfs", "react"],
+  "author": "",
+  "license": "MIT"
+}
